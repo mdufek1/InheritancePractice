@@ -16,5 +16,8 @@ public class SalariedEmployee extends Employee {
         super(name, age, pay);
     }
     
+    public void payCheck(SalariedEmployee employee){
+        System.out.println(employee.name+" makes, "+employee.pay+" per year.");
+    }
     
 }

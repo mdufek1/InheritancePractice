@@ -16,8 +16,8 @@ public class HourlyEmployee extends Employee {
         super(name, age, pay);
     }
     
-    public void calculatePay(double hoursWorked, double pay){
-        System.out.println(hoursWorked*pay);
+    public void calculatePay(String name, double hoursWorked, double pay){
+        System.out.println(name+" earned: $"+hoursWorked*pay+" this week.");
     }
     
 }

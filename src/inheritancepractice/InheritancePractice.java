@@ -25,7 +25,13 @@ public class InheritancePractice {
         
         trevor.setHoursWorked(36);
         
-        trevor.calculatePay(trevor.getHoursWorked(),trevor.getPay());
+        trevor.calculatePay(trevor.getName(),trevor.getHoursWorked(),trevor.getPay());
+        
+        lucy.payCheck(lucy);
+       
+        cory.setSales(10);
+        
+        cory.CalculatePay(cory);
         
     }
     

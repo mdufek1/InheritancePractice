@@ -18,9 +18,25 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
         super(name, age, pay);
         this.commission = commission;
     }
+
+    public int getSales() {
+        return sales;
+    }
+
+    public void setSales(int sales) {
+        this.sales = sales;
+    }
+
+    public double getCommission() {
+        return commission;
+    }
+
+    public void setCommission(double commission) {
+        this.commission = commission;
+    }
    
-    public void CalculatePay(double pay, double commission, int sales){
-        System.out.println(pay+(commission*sales));
+    public void CalculatePay(SalaryPlusCommissionEmployee employee){
+        System.out.println(employee.name+" makes, $"+(employee.pay+(employee.commission*employee.sales))+" a year, if they make "+employee.sales+" sales a year");
     }
     
     
