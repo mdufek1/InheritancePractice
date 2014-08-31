@@ -17,7 +17,7 @@ public class SalariedEmployee extends Employee {
     }
     
     public void payCheck(SalariedEmployee employee){
-        System.out.println(employee.name+" makes, "+employee.pay+" per year.");
+        System.out.println(employee.name+" makes, $"+employee.pay+" per year.");
     }
     
 }

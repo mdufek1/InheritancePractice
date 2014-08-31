@@ -6,6 +6,8 @@
 
 package my.concrete;
 
+import java.text.DecimalFormat;
+
 /**
  *
  * @author Mike
@@ -14,7 +16,7 @@ public class Employee {
     public String name;
     public int age;
     public double pay;
-    public double hoursWorked;
+    DecimalFormat money = new DecimalFormat("0.00");
     
     public Employee(String name, int age, double pay) {
         this.name = name;
@@ -46,14 +48,7 @@ public class Employee {
         this.pay = pay;
     }
 
-    public double getHoursWorked() {
-        return hoursWorked;
-    }
 
-    public void setHoursWorked(double hoursWorked) {
-        this.hoursWorked = hoursWorked;
-    }
-    
     
     
 }

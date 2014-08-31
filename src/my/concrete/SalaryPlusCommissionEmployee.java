@@ -34,9 +34,13 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     public void setCommission(double commission) {
         this.commission = commission;
     }
-   
-    public void CalculatePay(SalaryPlusCommissionEmployee employee){
-        System.out.println(employee.name+" makes, $"+(employee.pay+(employee.commission*employee.sales))+" a year, if they make "+employee.sales+" sales a year");
+    
+    public void calculateCommission(SalaryPlusCommissionEmployee employee){
+        System.out.println(employee.name+" makes, $"+money.format(employee.commission*employee.sales)+" off of "+employee.sales+" commission sale(s).");
+    }
+    
+    public void calculatePay(SalaryPlusCommissionEmployee employee){
+        System.out.println(employee.name+" makes, $"+(money.format(employee.pay+(employee.commission*employee.sales)))+" a year, if they make "+employee.sales+" sales a year");
     }
     
     

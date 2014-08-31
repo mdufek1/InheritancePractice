@@ -19,6 +19,7 @@ public class InheritancePractice {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        //Start Concrete Package 
         HourlyEmployee trevor = new HourlyEmployee("Trevor",27,9.30);
         SalariedEmployee lucy = new SalariedEmployee("Lucy", 45, 70581.54);
         SalaryPlusCommissionEmployee cory = new SalaryPlusCommissionEmployee("Cory", 29, 50487.79, 12.13);
@@ -31,7 +32,11 @@ public class InheritancePractice {
        
         cory.setSales(10);
         
-        cory.CalculatePay(cory);
+        cory.payCheck(cory);
+        cory.calculateCommission(cory);
+        cory.calculatePay(cory);
+        //End Concrete Package
+        
         
     }
     
