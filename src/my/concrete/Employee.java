@@ -44,7 +44,7 @@ public class Employee {
         return pay;
     }
 
-    public void setPayRate(double pay) {
+    public void setPay(double pay) {
         this.pay = pay;
     }
 
