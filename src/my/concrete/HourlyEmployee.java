@@ -10,6 +10,10 @@ package my.concrete;
  *
  * @author Mike
  */
-public class HourlyEmployee {
+public class HourlyEmployee extends Employee {
+
+    public HourlyEmployee(String name, int age, double payRate) {
+        super(name, age, payRate);
+    }
     
 }
