@@ -11,9 +11,10 @@ package my.concrete;
  * @author Mike
  */
 public class SalariedEmployee extends Employee {
-
+    
     public SalariedEmployee(String name, int age, double payRate) {
         super(name, age, payRate);
     }
+    
     
 }

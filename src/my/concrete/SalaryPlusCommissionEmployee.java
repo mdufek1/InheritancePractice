@@ -11,9 +11,16 @@ package my.concrete;
  * @author Mike
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
-
+    public int sales;
+    public int commission;
+    
     public SalaryPlusCommissionEmployee(String name, int age, double payRate) {
         super(name, age, payRate);
     }
+   
+    public void CalculatePay(double pay, double commission, int sales){
+        System.out.println(pay+(commission*sales));
+    }
+    
     
 }

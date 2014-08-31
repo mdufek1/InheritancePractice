@@ -13,13 +13,13 @@ package my.concrete;
 public class Employee {
     public String name;
     public int age;
-    public double payRate;
+    public double pay;
     public double hoursWorked;
     
-    public Employee(String name, int age, double payRate) {
+    public Employee(String name, int age, double pay) {
         this.name = name;
         this.age = age;
-        this.payRate = payRate;
+        this.pay = pay;
     }
 
     public String getName() {
@@ -38,16 +38,12 @@ public class Employee {
         this.age = age;
     }
 
-    public double getPayRate() {
-        return payRate;
+    public double getPay() {
+        return pay;
     }
 
-    public void setPayRate(double payRate) {
-        this.payRate = payRate;
-    }
-    
-    public void CalculatePay(double hoursWorked, double payRate){
-        System.out.println(hoursWorked*payRate);
+    public void setPayRate(double pay) {
+        this.pay = pay;
     }
     
     

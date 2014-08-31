@@ -16,4 +16,8 @@ public class HourlyEmployee extends Employee {
         super(name, age, payRate);
     }
     
+    public void CalculatePay(double hoursWorked, double payRate){
+        System.out.println(hoursWorked*payRate);
+    }
+    
 }
