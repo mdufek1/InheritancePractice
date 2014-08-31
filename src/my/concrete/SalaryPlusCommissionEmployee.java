@@ -12,10 +12,11 @@ package my.concrete;
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     public int sales;
-    public int commission;
+    public double commission;
     
-    public SalaryPlusCommissionEmployee(String name, int age, double payRate) {
-        super(name, age, payRate);
+    public SalaryPlusCommissionEmployee(String name, int age, double pay, double commission) {
+        super(name, age, pay);
+        this.commission = commission;
     }
    
     public void CalculatePay(double pay, double commission, int sales){

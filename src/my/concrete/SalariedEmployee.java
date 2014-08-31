@@ -12,8 +12,8 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
     
-    public SalariedEmployee(String name, int age, double payRate) {
-        super(name, age, payRate);
+    public SalariedEmployee(String name, int age, double pay) {
+        super(name, age, pay);
     }
     
     

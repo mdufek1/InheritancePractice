@@ -45,6 +45,14 @@ public class Employee {
     public void setPayRate(double pay) {
         this.pay = pay;
     }
+
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
+    }
     
     
     

@@ -12,12 +12,12 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
 
-    public HourlyEmployee(String name, int age, double payRate) {
-        super(name, age, payRate);
+    public HourlyEmployee(String name, int age, double pay) {
+        super(name, age, pay);
     }
     
-    public void CalculatePay(double hoursWorked, double payRate){
-        System.out.println(hoursWorked*payRate);
+    public void calculatePay(double hoursWorked, double pay){
+        System.out.println(hoursWorked*pay);
     }
     
 }
