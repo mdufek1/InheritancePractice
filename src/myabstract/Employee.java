@@ -41,6 +41,10 @@ public abstract class Employee {
     
     public abstract double getPay();
 
+    public int getEmployeeNo() {
+        return employeeNo;
+    }
+
 
 
 

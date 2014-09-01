@@ -11,7 +11,7 @@ import my.concrete.*;
  *
  * @author Mike
  */
-public class InheritancePractice {
+public class ConcreteInheritancePractice {
 
     /**
      * @param args the command line arguments
@@ -36,8 +36,7 @@ public class InheritancePractice {
         cory.calculateCommission(cory);
         cory.calculatePay(cory);
         //End Concrete Package
-        
-        
+
     }
     
 }
