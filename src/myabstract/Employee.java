@@ -6,7 +6,7 @@
 
 package myabstract;
 
-import java.text.DecimalFormat;
+
 
 /**
  *
@@ -17,7 +17,7 @@ public abstract class Employee {
     public int age;
     public double pay;
     public int employeeNo;
-    DecimalFormat money = new DecimalFormat("0.00");
+    
     
     public String getName() {
         return name;

@@ -6,14 +6,14 @@
 
 package myinterface;
 
-import java.text.DecimalFormat;
+
 
 /**
  *
  * @author Mike
  */
 public interface Employee {
-    final static DecimalFormat money = new DecimalFormat("0.00");
+    
     
     public String getName();
 

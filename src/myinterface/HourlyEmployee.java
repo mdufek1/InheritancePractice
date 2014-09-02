@@ -11,40 +11,60 @@ package myinterface;
  * @author Mike
  */
 public class HourlyEmployee implements Employee{
-
+    public String name;
+    public int age;
+    public double pay;
+    public int employeeNo;
+    public int hoursWorked;
+        
+    public HourlyEmployee(String name, int age, int employeeNo, double pay) {
+        this.name = name;
+        this.age = age;
+        this.employeeNo = employeeNo;
+        this.pay = pay;
+    }
+    
     @Override
     public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       return name; 
     }
 
     @Override
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.name = name;
     }
 
     @Override
     public int getAge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return age;
     }
 
     @Override
     public void setAge(int age) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       this.age = age;
     }
 
     @Override
     public void setPay(double pay) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       this.pay = pay;
     }
 
     @Override
     public double getPay() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (pay*hoursWorked);
     }
-
+    
+    public int getHoursWorked(){
+        return hoursWorked;
+    }
+    
+    public void setHoursWorked(int hoursWorked){
+        this.hoursWorked = hoursWorked;
+    }
+    
     @Override
     public int getEmployeeNo() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return employeeNo;
     }
     
 }
