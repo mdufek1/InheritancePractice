@@ -11,7 +11,7 @@ package my.concrete;
  * @author Mike
  */
 public class HourlyEmployee extends Employee {
-    public double hoursWorked;
+    private double hoursWorked;
     public HourlyEmployee(String name, int age, double pay) {
         super(name, age, pay);
     }

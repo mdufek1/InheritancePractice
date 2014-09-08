@@ -11,11 +11,11 @@ package myinterface;
  * @author Mike
  */
 public class HourlyEmployee implements Employee{
-    public String name;
-    public int age;
-    public double pay;
-    public int employeeNo;
-    public int hoursWorked;
+    private String name;
+    private int age;
+    private double pay;
+    private int employeeNo;
+    private int hoursWorked;
         
     public HourlyEmployee(String name, int age, int employeeNo, double pay) {
         this.name = name;

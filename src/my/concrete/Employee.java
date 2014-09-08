@@ -13,9 +13,9 @@ import java.text.DecimalFormat;
  * @author Mike
  */
 public class Employee {
-    public String name;
-    public int age;
-    public double pay;
+    private String name;
+    private int age;
+    private double pay;
     DecimalFormat money = new DecimalFormat("0.00");
     
     public Employee(String name, int age, double pay) {

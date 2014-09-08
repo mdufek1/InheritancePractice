@@ -14,7 +14,7 @@ package myabstract;
  */
 public class HourlyEmployee extends Employee {
    
-    public double hoursWorked;
+    private double hoursWorked;
 
     public HourlyEmployee(String name, int age, int employeeNo, double pay) {
         this.name = name;

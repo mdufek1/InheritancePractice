@@ -13,8 +13,8 @@ package myabstract;
  * @author Mike
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
-    public int sales;
-    public double commission;
+    private int sales;
+    private double commission;
 
     public SalaryPlusCommissionEmployee(String name, int age, int employeeNo, double pay, double commission) {
         super(name, age, employeeNo, pay);

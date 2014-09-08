@@ -13,10 +13,10 @@ package myabstract;
  * @author Mike
  */
 public abstract class Employee {
-    public String name;
-    public int age;
-    public double pay;
-    public int employeeNo;
+    String name;
+    int age;
+    double pay;
+    int employeeNo;
     
     
     public String getName() {
